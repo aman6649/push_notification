@@ -7,6 +7,6 @@ let vapidKeys = {
 
 push.setVapidDetails('mailto:test@code.co.uk',vapidKeys.publicKey,vapidKeys.privateKey)
 
-let sub = {};
+let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/daJM1QMOl3g:APA91bFRJtCFkETwFi0uWO_ESUF9Eprezw7niBLEMSEBArDXQW5lTAwF215VkXS5s2tTF2e8KqXjPnjtzYFXfdY5fCHMQ3PlIH2raTijulE20OtiCE07FvTeQUtfaUpKZr-byfEesSHq","expirationTime":null,"keys":{"p256dh":"BOw5_SOCAPKpiUM6F7wsmZqO7_ccvgvdA7GIOzYaD700y-R0bOaba9hYzhvH0-Myb94PsVT3kISFHhNEruX-cfo","auth":"KcwYQHakk3yYvWeWF_nWaQ"}};
 
 push.sendNotification(sub,'test msg')
