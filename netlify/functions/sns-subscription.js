@@ -24,10 +24,10 @@ const axios = require('axios');
 
 exports.handler = async function(event, context) {
 
-   // console.log("sns message d");
-    //console.log( event);
+   console.log("sns message d");
+    console.log( event);
     const { SubscribeURL } = JSON.parse(event.body);
-    console.log(SubscribeURL);
+    //console.log(SubscribeURL);
     if (SubscribeURL) {
         try {
             // Send an HTTP GET request to the SubscribeURL to confirm the subscription
