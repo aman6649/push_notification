@@ -23,7 +23,9 @@
 const axios = require('axios');
 
 exports.handler = async function(event, context) {
-    console.log("sns message", event);
+
+    console.log("sns message d");
+    console.log( event);
     const { SubscribeURL } = JSON.parse(event.body);
     console.log(SubscribeURL);
     if (SubscribeURL) {
